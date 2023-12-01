@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.jdbc.lab.non_contextual_creation: true
+    generate-ddl: true
+
+  datasource:
+    url: jdbc:postgresql://postgresql:5432/billing_project
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
